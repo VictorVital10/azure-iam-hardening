@@ -8,11 +8,19 @@ Neste arquivo, descrevo a configuração de usuários, grupos e permissões no p
 
 Criei usuários específicos para testes de permissões, simulando diferentes papéis dentro de um ambiente corporativo.
 
-Usuário Admin-Teste: conta com permissões elevadas para administração do ambiente.
+Usuários criados:
 
-Usuário Dev: conta com permissões limitadas para desenvolvimento e testes controlados.
+* Administrador-VictorVital: conta com permissões elevadas para administração do ambiente.
 
-Outros usuários de suporte ou teste, conforme necessário para os cenários.
+* Usuário-Dev: conta com permissões limitadas para desenvolvimento e testes controlados.
+
+* Usuário-Anl: conta com permissões apenas para leitura.
+
+* Usuário Admin-Teste: conta propositalmente configurada com permissões elevadas, a função "Owner" foi atribuida a esse usuário, que é o maior nível hierarquico de um usuário na Azure
+
+![Usuários](../images/azure/Users.png)
+
+*Imagem 6 - Lista de usuários.*
 
 ---
 
@@ -20,17 +28,23 @@ Outros usuários de suporte ou teste, conforme necessário para os cenários.
 
 Organizei os usuários em grupos para facilitar a aplicação de políticas de acesso e seguir boas práticas de RBAC.
 
-Exemplo de grupos:
+Grupos criados:
 
-* Grupo-Admins – usuários com permissões de administrador.
+* Grupo-Analistas – usuários com permissões de leitura no grupo de recursos.
 
-* Grupo-Dev – usuários com permissões restritas ao Resource Group de testes.
+* Grupo-Desenvolvedores – usuários com permissões limitdas ao desenvolvimento e testes controlados..
+
+* Grupo-Adm-Teste - usuários com permissões elevadas, podendo criar, gerenciar e deletar recursos.
+
+![Grupos de Usuários](../images/azure/Groups.png)
+
+*Imagem 7 - Grupos de usuários.*
 
 ---
 
 ### Atribuição de Roles (RBAC)
 
-Atribuí roles específicas a cada usuário ou grupo, aplicando o princípio do mínimo privilégio:
+Atribuí roles específicas a cada grupo, aplicando o princípio do mínimo privilégio:
 
 * Owner – acesso total em Resource Groups selecionados.
 
@@ -39,6 +53,8 @@ Atribuí roles específicas a cada usuário ou grupo, aplicando o princípio do 
 * Reader – apenas visualização de recursos, sem alterações.
 
 Essa etapa foi essencial para testar e compreender como diferentes papéis impactam o acesso a recursos e operações na Azure.
+
+<!-- Inserir aqui a ultima imagem do arquivo 3, lista de RBAC atribuidas aos grupos de usuários, na aba IAM. -->
 
 ---
 
