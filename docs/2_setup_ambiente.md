@@ -8,9 +8,11 @@ Neste arquivo, descrevo como configurei o ambiente do projeto Azure IAM Hardenin
 
 Para iniciar, utilizei uma assinatura Azure válida e configurei o tenant principal para o projeto. Essa etapa foi essencial para garantir que todos os recursos fossem criados dentro de um ambiente controlado, permitindo aplicar e testar permissões sem impactar outros ambientes.
 
-Tipo de assinatura utilizada: (ex: Pay-As-You-Go)
+**Recomendo fazer o uso da opção de assinatura "Pay-As-You-Go (PAYG)", e que na Azure é chamada de "Microsoft Azure Plan" assim como mostro na imagem abaixo:**
 
-Tenant configurado: (nome do tenant ou ID, se quiser incluir)
+![Tipo de Assinatura](../images/azure/Subscription_Type.png)
+
+*Imagem 1 - Tipo de assinatura "Microsoft Azure Plan".*
 
 ---
 
@@ -22,7 +24,11 @@ Exemplo de Resource Groups:
 
 RG-Teste – utilizado para testes práticos de IAM.
 
-RG-Dev – simulação de ambiente de desenvolvimento.
+NetworkWatcherRG – simulação de ambiente de monitoramento de redes.
+
+![Grupo de Recuros](../images/azure/Resource_Group.png)
+
+ *Imagem 2 - Grupo de Recursos.*
 
 Essa organização ajuda a entender melhor como o RBAC se aplica a diferentes contextos dentro da Azure.
 
@@ -32,10 +38,29 @@ Essa organização ajuda a entender melhor como o RBAC se aplica a diferentes co
 
 Para gerenciar e realizar os testes no ambiente, utilizei principalmente:
 
-Portal Azure – para criação e configuração de recursos.
+**Portal Azure:** Criação e configuração de recursos.
 
-Microsoft Entra ID – para gerenciamento de usuários, grupos e roles.
+**Microsoft Entra ID (antigo Active Directory):**  Gerenciamento de usuários, grupos e roles.
 
-(Outras ferramentas que você possa ter usado, como CLI ou PowerShell)
+![Microsoft Entra ID](../images/azure/Entra_Id.png)
+
+*Imagem 3 - Microsoft Entra ID (antigo Active Directory).*
+
+---
+
+**IAM:** Criação e gerenciamento de RBAC e permissões.
+
+![IAM](../images/azure/IAM.png)
+
+*Imagem 4 - Recurso IAM na Azure.*
+
+---
+
+**Microsoft Authenticator:** Exigir autenticação multifatorial (MFA) obrigatória para todos os usuários.
+
+![Microsoft Authenticator](../images/azure/Authenticator.JPG)
+
+*Imagem 5 - Microsoft Authenticator no celular.*
+
 
 ---
