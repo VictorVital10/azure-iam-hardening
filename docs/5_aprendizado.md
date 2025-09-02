@@ -46,6 +46,6 @@ Ter um ambiente controlado para testar configurações de segurança.
 
 Aplicar os conceitos de hardening e segurança de identidade de forma prática, não apenas teórica.
 
-Continuar praticando e documentando, pois a experiência prática consolida o aprendizado.
+Continuar praticando e documentando.
 
 ---

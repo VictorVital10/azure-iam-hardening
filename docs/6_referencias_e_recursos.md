@@ -1,6 +1,6 @@
 # Referências e Recursos
 
-Neste arquivo, listo os materiais, documentações e recursos utilizados durante o desenvolvimento do projeto Azure IAM Hardening, servindo como referência futura para consultas e estudos.
+Neste arquivo, deixei alguns materiais, documentações e recursos que utilizei durante o desenvolvimento do projeto Azure IAM Hardening, servindo como referência futura para consultas e estudos.
 
 ---
 

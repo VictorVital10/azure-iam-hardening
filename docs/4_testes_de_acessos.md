@@ -14,7 +14,9 @@ Neste arquivo, descrevo os testes práticos realizados no projeto Azure IAM Hard
 
 ---
 
-**RESULTADOS DO TESTE 1:** Usuário Analista (Permissão somente para leitura) - verifiquei se o usuário com permissões limitadas conseguia criar novos recursos, atribuir funções e criar novas roles (RBAC).
+**RESULTADOS DO TESTE 1** 
+
+Usuário Analista (Permissão somente para leitura) - verifiquei se o usuário com permissões limitadas conseguia criar novos recursos, atribuir funções e criar novas roles (RBAC).
 
 ![RG Failure](../images/access_test/Failure/RG_Failure.png)
 
@@ -34,7 +36,9 @@ Neste arquivo, descrevo os testes práticos realizados no projeto Azure IAM Hard
 
 ---
 
-**RESULTADOS DO TESTE 2:** Usuário Developer (Permissão para criar e alterar recursos) - tentativa de criar recursos, atribuir funções e criar novas roles (RBAC).
+**RESULTADOS DO TESTE 2**
+
+ Usuário Developer (Permissão para criar e alterar recursos) - tentativa de criar recursos, atribuir funções e criar novas roles (RBAC).
 
 ![RBAC Success](../images/access_test/Success/Vm_Success.png)
 
@@ -54,7 +58,9 @@ Neste arquivo, descrevo os testes práticos realizados no projeto Azure IAM Hard
 
 ---
 
-**RESULTADOS DO TESTE 3:** Usuário ADM (Permissões elevadas para gerenciar praticamente todo o ambiente) - simulação de como um usuário com permissões elevadas pode prejudicar o ambiente, podendo excluir recursos e realizar escalonamento privilégio.
+**RESULTADOS DO TESTE 3**
+
+ Usuário ADM (Permissões elevadas para gerenciar praticamente todo o ambiente) - simulação de como um usuário com permissões elevadas pode prejudicar o ambiente, podendo excluir recursos e realizar escalonamento privilégio.
 
 ![Delete Resource](../images/privilege_user/delete_resource.png)
 
