@@ -54,7 +54,9 @@ Atribuí roles específicas a cada grupo, aplicando o princípio do mínimo priv
 
 Essa etapa foi essencial para testar e compreender como diferentes papéis impactam o acesso a recursos e operações na Azure.
 
-<!-- Inserir aqui a ultima imagem do arquivo 3, lista de RBAC atribuidas aos grupos de usuários, na aba IAM. -->
+![RBAC](../images/azure/RBAC.png)
+
+*Imagem 8 - Lista de RBAC criadas.*
 
 ---
 
