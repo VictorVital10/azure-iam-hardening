@@ -6,9 +6,15 @@ Neste arquivo, descrevo os testes práticos realizados no projeto Azure IAM Hard
 
 ## Cenários de Testes
 
-**TESTE 1:** Usuário Analista (Permissão somente para leitura) - verifiquei se o usuário com permissões limitadas conseguia criar novos recursos, atribuir funções e criar novas roles (RBAC).
+* #### Teste 1 - Usuário com a permissão somente para leitura (Reader) tenta criar, alterar e excluir recursos, além de tentar atribuir funções e criar novas roles (RBAC).
 
-**RESULTADOS DO TESTE 1:**
+* #### Teste 2 - Usuário com a permissões para criar, alterar e excluir recursos, além de poder atribuir funções e criar novas roles (RBAC).
+
+* #### Teste 3 - Usuário criado propositalmente com acesso privilegiado (Owner/ADM) com permissões para controlar praticamente todo o ambiente, simulando como um usuário com permissões elevadas pode prejudicar o ambiente, podendo excluir recursos e realizar escalonamento de privilégio. 
+
+---
+
+**RESULTADOS DO TESTE 1:** Usuário Analista (Permissão somente para leitura) - verifiquei se o usuário com permissões limitadas conseguia criar novos recursos, atribuir funções e criar novas roles (RBAC).
 
 ![RG Failure](../images/access_test/Failure/RG_Failure.png)
 
@@ -28,9 +34,7 @@ Neste arquivo, descrevo os testes práticos realizados no projeto Azure IAM Hard
 
 ---
 
-**TESTE 2:** Usuário Developer (Permissão para criar e alterar recursos) - tentativa de criar recursos, atribuir funções e criar novas roles (RBAC).
-
-**RESULTADOS DO TESTE 2:**
+**RESULTADOS DO TESTE 2:** Usuário Developer (Permissão para criar e alterar recursos) - tentativa de criar recursos, atribuir funções e criar novas roles (RBAC).
 
 ![RBAC Success](../images/access_test/Success/Vm_Success.png)
 
@@ -49,6 +53,27 @@ Neste arquivo, descrevo os testes práticos realizados no projeto Azure IAM Hard
 *Imagem 14: Novo grupo de recursos criado a partir do Usuário Dev.*
 
 ---
+
+**RESULTADOS DO TESTE 3:** Usuário ADM (Permissões elevadas para gerenciar praticamente todo o ambiente) - simulação de como um usuário com permissões elevadas pode prejudicar o ambiente, podendo excluir recursos e realizar escalonamento privilégio.
+
+![Delete Resource](../images/privilege_user/delete_resource.png)
+
+*Imagem 15: o usuário ADM, com permissões elevadas é capaz de excluir recursos de forma intencional ou não.*
+
+---
+
+![Delete Resource](../images/privilege_user/delete_result.png)
+
+*Imagem 16: o usuário ADM, obteve sucesso ao tentar excluir uma VM.*
+
+---
+
+![Delete Resource](../images/privilege_user/privilege_escalation.png)
+
+*Imagem 17: Escalonamento de privilégio, o usuário ADM é capaz de alterar funções e criar regras/roles personalizadas e atribuir a si mesmo e a outros usuários.*
+
+---
+
 
 ### Procedimentos
 
@@ -71,6 +96,8 @@ Para cada teste, realizei os seguintes passos:
 Usuário Analista com permissões mínimas encontrou acesso restrito ao tentar criar recursos e RBAC conforme esperado, garantindo que o princípio do privilégio mínimo fosse respeitado.
 
 Usuário Developer com permissões elevadas conseguiu gerenciar roles e recursos sem restrições, permitindo validar a configuração de permissões elevadas.
+
+Usuário ADM com permissões de administrador conseguiu excluir recursos e escalonar privilégios, confirmando os perigos de uma má gestão de IAM.
 
 Os testes ajudaram a identificar potenciais riscos e ajustes necessários na atribuição de roles.
 
