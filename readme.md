@@ -50,7 +50,7 @@ A pasta `docs` contém toda a documentação detalhada do projeto:
 
 ## 📎 Link para o Post no LinkedIn
 
-👉 [Acessar publicação]() 
+👉 [Acessar publicação](https://www.linkedin.com/posts/victor-vital-6b6761275_cybersecurity-cloud-cloudsecurity-activity-7368930804896399361-kSZm) 
 
 ---
 

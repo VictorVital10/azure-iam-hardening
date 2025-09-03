@@ -87,7 +87,7 @@ Para cada teste, realizei os seguintes passos:
 
 - Login no Portal Azure com o usuário do cenário.
 
-- MFA ativo utilizando o Microsoft Authenticator em todas as contas
+- MFA obrigatório utilizando o Microsoft Authenticator em todas as contas.
 
 - Tentativa de realizar ações permitidas e não permitidas.
 
