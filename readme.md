@@ -58,6 +58,6 @@ A pasta `docs` contém toda a documentação detalhada do projeto:
 
 **Victor Araujo Vital**  
 
-📌 LinkedIn: [https://www.linkedin.com/in/victor-vital-6b6761275/](https://www.linkedin.com/in/victor-vital-6b6761275/)
+📌 LinkedIn: [https://www.linkedin.com/in/victorvitall/](https://www.linkedin.com/in/victorvitall/)
 
 ---
